@@ -1,0 +1,17 @@
+{
+     "listeners": {
+         "*:80": {
+             "application": "rainloop"
+         }
+     },
+     "applications": {
+         "rainloop": {
+             "type":  "php",
+             "user":  "nobody",
+             "group": "nobody",
+             "workers": 20,
+             "root":  "/data/rainloop",
+             "index": "index.php"
+         }
+     }
+}
